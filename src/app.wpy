@@ -1,20 +1,7 @@
 <style lang="less">
 .container {
   height: 100%;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*align-items: center;*/
-  /*justify-content: space-between;*/
-  /*box-sizing: border-box;*/
 }
-::-webkit-scrollbar{
-  width: 0;
-  height: 0;
-  color: transparent;
-  display:none;
-}
-.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
-.clearfix {zoom:1;}
 </style>
 
 <script>
@@ -26,8 +13,8 @@ import 'wepy-async-function'
 export default class extends wepy.app {
   config = {
     pages: [
-      'pages/index/index',
-      'pages/self/self'
+      'pages/index',
+      'pages/self'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -44,15 +31,11 @@ export default class extends wepy.app {
       backgroundColor: '#1D1D1D',
       list: [
         {
-          pagePath: 'pages/index/index',
-          iconPath: 'common/assets/images/qietu/icon_home_normal.png',
-          selectedIconPath: 'common/assets/images/qietu/icon_home_highlight.png',
+          pagePath: 'pages/index',
           text: '首页'
         },
         {
-          pagePath: 'pages/self/self',
-          iconPath: 'common/assets/images/qietu/icon_profile_normal.png',
-          selectedIconPath: 'common/assets/images/qietu/icon_profile_highlight.png',
+          pagePath: 'pages/self',
           text: '我的'
         }
       ]
