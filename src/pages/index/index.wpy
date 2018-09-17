@@ -1,0 +1,32 @@
+<style lang="less">
+</style>
+<template>
+  <view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+  // import api from '../../api/api'
+  // import util from '../../utils/util'
+
+  export default class Index extends wepy.page {
+    config = {
+      navigationBarTitleText: ''
+    }
+    components = {
+    }
+    data = {
+    }
+
+    computed = {
+    }
+
+    methods = {
+    }
+    events = {
+    }
+    onLoad(options, data) {
+    }
+  }
+</script>

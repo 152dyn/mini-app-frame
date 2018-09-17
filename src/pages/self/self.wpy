@@ -1,0 +1,21 @@
+<style lang="less">
+</style>
+<template>
+  <view></view>
+</template>
+<script>
+  import wepy from 'wepy'
+  // import api from '../../api/api'
+//  import util from '../../utils/util'
+  export default class Self extends wepy.page {
+    config = {
+      navigationBarTitleText: ''
+    }
+    data = {
+    }
+    onLoad (options) {
+    }
+    onShow () {
+    }
+  }
+</script>

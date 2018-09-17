@@ -1,0 +1,64 @@
+<style lang="less">
+.container {
+  height: 100%;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: space-between;*/
+  /*box-sizing: border-box;*/
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+  display:none;
+}
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+.clearfix {zoom:1;}
+</style>
+
+<script>
+import wepy from 'wepy'
+import 'wepy-async-function'
+// import api from './api/api'
+// import util from './utils/util'
+
+export default class extends wepy.app {
+  config = {
+    pages: [
+      'pages/index/index',
+      'pages/self/self'
+    ],
+    window: {
+      backgroundTextStyle: 'light',
+      navigationBarBackgroundColor: '#fff',
+      navigationBarTitleText: '悦丽阁',
+      navigationBarTextStyle: 'black',
+      onReachBottomDistance: 50
+//      debug: true
+    },
+    tabBar: {
+      color: '#807B73',
+      selectedColor: '#fff',
+      borderStyle: 'black',
+      backgroundColor: '#1D1D1D',
+      list: [
+        {
+          pagePath: 'pages/index/index',
+          iconPath: 'common/assets/images/qietu/icon_home_normal.png',
+          selectedIconPath: 'common/assets/images/qietu/icon_home_highlight.png',
+          text: '首页'
+        },
+        {
+          pagePath: 'pages/self/self',
+          iconPath: 'common/assets/images/qietu/icon_profile_normal.png',
+          selectedIconPath: 'common/assets/images/qietu/icon_profile_highlight.png',
+          text: '我的'
+        }
+      ]
+    }
+  }
+  onLaunch () {
+  }
+}
+</script>
